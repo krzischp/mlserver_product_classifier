@@ -1,0 +1,9 @@
+{
+    "output_name": "emocao",
+    "classes": [
+        "alegria",
+        "tristeza",
+        "ira",
+        "desprezo"
+    ]
+}

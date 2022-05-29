@@ -1,0 +1,8 @@
+{
+    "name": "iris-dtc",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./iris_dtc_1.0.joblib",
+        "version": "1.0"
+    }
+}

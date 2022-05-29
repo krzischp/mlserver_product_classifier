@@ -1,0 +1,8 @@
+{
+    "name": "iris-lda",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./iris_lda_1.0.joblib",
+        "version": "1.0"
+    }
+}

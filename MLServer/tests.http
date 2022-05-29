@@ -1,0 +1,166 @@
+GET http://localhost:8080/v2/models/classificador-produtos/versions/1.0/ready
+
+
+###
+POST http://localhost:8080/v2/models/classificador-produtos/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [3],
+            "datatype": "BYTES",
+            "data": [ "Soldados de plástico", "Senhor dos aneis", "Senhor dos anéis" ]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/classificador-produtos/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [1],
+            "datatype": "BYTES",
+            "data": [ "Senhor dos aneis" ]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/classificador-produtos/versions/1.1/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [1],
+            "datatype": "BYTES",
+            "data": [ "Senhor dos aneis" ]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/iris-dtc/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [10,4],
+            "datatype": "FP32",
+            "data": [[5  , 3.4, 1.5, 0.2],
+                     [5.8, 2.7, 5.1, 1.9],
+                     [4.7, 3.2, 1.6, 0.2],
+                     [6  , 2.9, 4.5, 1.5],
+                     [5.4, 3.9, 1.7, 0.4],
+                     [5.4, 3.7, 1.5, 0.2],
+                     [6.2, 3.4, 5.4, 2.3],
+                     [6.9, 3.1, 4.9, 1.5],
+                     [5.7, 4.4, 1.5, 0.4],
+                     [7.2, 3.6, 6.1, 2.5]]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/iris-lda/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [10,4],
+            "datatype": "FP32",
+            "data": [[5  , 3.4, 1.5, 0.2],
+                     [5.8, 2.7, 5.1, 1.9],
+                     [4.7, 3.2, 1.6, 0.2],
+                     [6  , 2.9, 4.5, 1.5],
+                     [5.4, 3.9, 1.7, 0.4],
+                     [5.4, 3.7, 1.5, 0.2],
+                     [6.2, 3.4, 5.4, 2.3],
+                     [6.9, 3.1, 4.9, 1.5],
+                     [5.7, 4.4, 1.5, 0.4],
+                     [7.2, 3.6, 6.1, 2.5]]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/iris-lgb/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "predict",
+            "shape": [1,4],
+            "datatype": "FP32",
+            "data": [[5  , 3.4, 1.5, 0.2]]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/identificador-emocoes/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "texto",
+            "shape": [4],
+            "datatype": "BYTES",
+            "data": ["estou bravo", "estou feliz", "amo você", "pra mim tanto faz"]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/identificador-emocoes/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": []
+}
+
+###
+POST http://localhost/mlapi/v2/models/adivinhador-futuro/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "texto",
+            "shape": [1],
+            "datatype": "BYTES",
+            "data": ["Espelho, espelho meu, eu ficarei rico com Machine Learning?"]
+        }
+    ]
+}
+
+###
+POST http://localhost/mlapi/v2/models/identificador-sentimentos/versions/1.0/infer
+Content-Type: application/json
+
+{
+    "inputs": [
+        {
+            "name": "texto",
+            "shape": [4],
+            "datatype": "BYTES",
+            "data": ["Que droga! Estou muito bravo, não gostei nada disso!", 
+                     "estou feliz, que legal isso",
+                     "amo você, mas não tenho certeza",
+                     "meh"]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+services:
+  mlserver:
+    build:
+      context: .
+      dockerfile: Dockerfile-mlserver
+    ports:
+      - "8081:8081"
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+      - "80:80"

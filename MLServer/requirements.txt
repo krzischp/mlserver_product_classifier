@@ -1,0 +1,8 @@
+protobuf==3.20.0
+mlserver==1.0.1
+mlserver-sklearn==1.0.1
+mlserver-lightgbm==1.0.1
+torch==1.11.0
+torchaudio==0.11.0
+torchvision==0.12.0
+transformers==4.19.2

@@ -1,0 +1,8 @@
+{
+    "name": "classificador-produtos",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./classificador-produtos-1.0.joblib",
+        "version": "1.0"
+    }
+}

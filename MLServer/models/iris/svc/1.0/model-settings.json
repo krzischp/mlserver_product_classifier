@@ -1,0 +1,8 @@
+{
+    "name": "iris-svc",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./iris_svc_1.0.joblib",
+        "version": "1.0"
+    }
+}

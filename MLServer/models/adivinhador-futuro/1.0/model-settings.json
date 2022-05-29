@@ -1,0 +1,16 @@
+{
+    "name": "adivinhador-futuro",
+    "implementation": "custom-runtimes.FakeRuntime",
+    "parameters": {
+        "uri": "seed.json",
+        "version": "1.0",
+        "extra": {
+            "output_name": "futuro",
+            "classes": [
+                "sim",
+                "não",
+                "talvez"
+            ]
+        }
+    }
+}

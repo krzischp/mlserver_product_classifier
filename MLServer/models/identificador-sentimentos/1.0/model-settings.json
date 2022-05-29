@@ -1,0 +1,18 @@
+{
+    "name": "identificador-sentimentos",
+    "implementation": "custom-runtimes.BertRuntime",
+    "parameters": {
+        "uri": "best_model_state.bin",
+        "version": "1.0",
+        "extra": {
+            "OUTPUT_NAME": "sentiment",
+            "BERT_MODEL": "neuralmind/bert-base-portuguese-cased",
+            "CLASS_NAMES": [
+                "negative",
+                "neutral",
+                "positive"
+            ],
+            "MAX_SEQUENCE_LEN": 160
+        }
+    }
+}

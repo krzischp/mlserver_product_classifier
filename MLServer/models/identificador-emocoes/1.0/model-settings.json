@@ -1,0 +1,17 @@
+{
+    "name": "identificador-emocoes",
+    "implementation": "custom-runtimes.FakeRuntime",
+    "parameters": {
+        "uri": "seed.json",
+        "version": "1.0",
+        "extra": {
+            "output_name": "emocao",
+            "classes": [
+                "alegria",
+                "tristeza",
+                "ira",
+                "desprezo"
+            ]
+        }
+    }
+}

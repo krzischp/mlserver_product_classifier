@@ -1,0 +1,8 @@
+{
+    "name": "iris-gnb",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./iris_gnb_1.0.joblib",
+        "version": "1.0"
+    }
+}

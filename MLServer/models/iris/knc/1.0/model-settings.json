@@ -1,0 +1,8 @@
+{
+    "name": "iris-knc",
+    "implementation": "mlserver_sklearn.SKLearnModel",
+    "parameters": {
+        "uri": "./iris_knc_1.0.joblib",
+        "version": "1.0"
+    }
+}

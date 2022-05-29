@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# BERT
+MLServer/models/identificador-sentimentos/1.0/best_model_state.bin
+
+
+# Maven.gitignore
+MLServer/cadastro-produtos/target/

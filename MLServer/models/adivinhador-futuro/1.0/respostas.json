@@ -1,0 +1,8 @@
+{
+    "output_name": "futuro",
+    "classes": [
+        "sim",
+        "não",
+        "talvez"
+    ]
+}
